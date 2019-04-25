@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname,'public')))
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res)=>{
-    res.send('Home')
+    res.render('Home')
 })
 
 
